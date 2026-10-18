@@ -125,7 +125,7 @@ const kpis = computed(() => [
         <TopPayees class="lg:col-span-5" :transactions="rangeTransactions" />
         <MonthComparison class="lg:col-span-7" :transactions="transactions" :months="months" />
       </div>
-      <div v-else class="grid gap-4 lg:min-h-0 lg:flex-1 lg:overflow-y-auto">
+      <div v-else class="grid auto-rows-max gap-4 lg:min-h-0 lg:flex-1 lg:overflow-y-auto">
         <LargestTransactions :transactions="rangeTransactions" />
         <UnmatchedPayees
           :payees="unmatchedPayees"
