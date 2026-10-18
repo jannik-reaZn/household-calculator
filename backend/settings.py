@@ -14,7 +14,7 @@ BACKEND_ROOT = Path(__file__).resolve().parent
 
 
 class AppSettings(BaseModel):
-    title: str = "Application Template"
+    title: str = "household-calculator"
     api_prefix: str = "/api"
 
 

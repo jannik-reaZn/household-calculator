@@ -1,4 +1,4 @@
-# Project Guidelines — app-template
+# Project Guidelines — household-calculator
 
 Full-stack template: **Python 3.14 FastAPI backend** + **Vue 3 + Vite + TypeScript frontend**.
 
