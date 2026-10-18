@@ -1,5 +1,5 @@
 {
-  "name": "Application Template",
+  "name": "household-calculator",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
