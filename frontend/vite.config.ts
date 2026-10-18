@@ -4,6 +4,7 @@ import ui from "@nuxt/ui/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.VITE_BASE ?? "/",
   fmt: { ignorePatterns: ["src/api/**"] },
   staged: {
     "*.{js,jsx,ts,tsx,vue,css,json}": "vp check --fix",

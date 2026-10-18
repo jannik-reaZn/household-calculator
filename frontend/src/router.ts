@@ -5,7 +5,7 @@ import NotFoundView from "./views/NotFoundView.vue";
 import UploadView from "./views/UploadView.vue";
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", name: "home", component: HomeView },
     { path: "/upload", name: "upload", component: UploadView },
