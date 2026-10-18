@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "astral-sh.ty",
+    "voidzero.vite-plus-extension-pack",
+    "ms-azuretools.vscode-docker"
+  ]
+}

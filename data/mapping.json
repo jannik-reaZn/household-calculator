@@ -1,0 +1,53 @@
+{
+  "Lebensmittel": [
+    "Budni",
+    "Penny",
+    "Rewe",
+    "Aldi",
+    "Lidl",
+    "Edeka",
+    "Dm",
+    "Rossmann",
+    "Netto",
+    "Getranke Hoffmann",
+    "Getrankeshop Horpner",
+    "Biomarkt",
+    "Tchibo"
+  ],
+  "Kleidung": [
+    "Peek Cloppenburg",
+    "Galeria Kaufhof",
+    "Babyone",
+    "Deichmann",
+    "Schuhhaus Kay",
+    "Hollister",
+    "Vero Moda"
+  ],
+  "Sport": [
+    "Niendorfer Turn-und Sportverein",
+    "TuS Germania Schnelsen",
+    "Birgit Hansen",
+    "Sportverein Eidelstedt"
+  ],
+  "Auto": ["Star", "Aral", "Hem", "Huk"],
+  "Wohnung": [
+    "Thor",
+    "Wilhelm.tel",
+    "Vattenfall",
+    "lekker Energie GmbH",
+    "Rundfunk",
+    "Mobilcom",
+    "Dazn"
+  ],
+  "Vorsorge": ["Bayerische Beamtenkrankenkasse"],
+  "Sonstige 1": ["Hartfelder", "Smyths Toys", "Thalia", "Staples"],
+  "Sonstige 2": ["Media-Saturn", "Media Markt", "Amazon"],
+  "Sonstige 3": [
+    "Ikea",
+    "Moebel Hoeffner",
+    "Moebel Schulenburg",
+    "Bauhaus",
+    "Hornbach",
+    "Fielmann"
+  ]
+}

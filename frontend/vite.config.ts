@@ -1,0 +1,22 @@
+import { defineConfig, lazyPlugins } from "vite-plus";
+import vue from "@vitejs/plugin-vue";
+import ui from "@nuxt/ui/vite";
+
+// https://vite.dev/config/
+export default defineConfig({
+  fmt: { ignorePatterns: ["src/api/**"] },
+  staged: {
+    "*.{js,jsx,ts,tsx,vue,css,json}": "vp check --fix",
+  },
+  lint: {
+    ignorePatterns: ["src/api/**"],
+    jsPlugins: [{ name: "vite-plus", specifier: "vite-plus/oxlint-plugin" }],
+    rules: { "vite-plus/prefer-vite-plus-imports": "error" },
+    options: { typeAware: true, typeCheck: true },
+  },
+  plugins: lazyPlugins(() => [vue(), ui({ icon: { clientBundle: { scan: true } } })]),
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
+});

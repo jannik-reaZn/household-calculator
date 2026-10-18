@@ -1,0 +1,44 @@
+{
+  "name": "app-template",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "vp config --no-agent",
+    "postinstall": "pnpm gen:api",
+    "dev": "pnpm gen:api && vp dev",
+    "build": "pnpm gen:api && vue-tsc -b && vp build",
+    "preview": "vp preview",
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check",
+    "check": "vp check",
+    "test": "vp test run",
+    "gen:api": "openapi-ts"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.145",
+    "@nuxt/ui": "^4.12.0",
+    "echarts": "^6.1.0",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.30",
+    "vue-echarts": "^8.3.2",
+    "vue-i18n": "^11.4.14",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.99.0",
+    "@types/node": "^24.12.0",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "@vue/tsconfig": "^0.9.0",
+    "typescript": "~5.9.3",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.3.0",
+    "vite-plus": "1.3.0",
+    "vue-tsc": "^3.2.5"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.3.0"
+  },
+  "packageManager": "pnpm@12.14.0"
+}

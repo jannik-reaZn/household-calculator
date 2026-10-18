@@ -1,0 +1,95 @@
+export default {
+  app: { title: "Haushaltsrechner" },
+  footer: { copyright: "© {year} Haushaltsrechner. Alle Rechte vorbehalten." },
+  common: {
+    noExpenses: "Keine Ausgaben im gewählten Zeitraum.",
+    payee: "Empfänger",
+    category: "Kategorie",
+    amount: "Betrag",
+  },
+  notFound: {
+    title: "Seite nicht gefunden",
+    message: "Die angeforderte Seite existiert nicht.",
+    home: "Zur Startseite",
+  },
+  home: {
+    title: "Wohin geht dein Geld?",
+    description:
+      "Der Haushaltsrechner wertet den CSV-Export deines Bankkontos aus und zeigt dir als Diagramme, wofür du dein Geld ausgibst.",
+    start: "Jetzt starten",
+    features: {
+      upload: {
+        title: "1. CSV hochladen",
+        text: "Lade den Kontoauszug deiner Bank als CSV-Datei auf der Upload-Seite hoch.",
+      },
+      analysis: {
+        title: "2. Ausgaben analysieren",
+        text: "Sieh Ausgaben nach Kategorie, den Verlauf über die Monate, die größten Empfänger und Monatsvergleiche.",
+      },
+      privacy: {
+        title: "Deine Daten bleiben bei dir",
+        text: "Alles läuft in deinem Browser. Die Datei wird weder hochgeladen noch gespeichert.",
+      },
+    },
+  },
+  stepper: {
+    upload: { title: "Upload", description: "CSV-Datei hochladen" },
+    analysis: { title: "Analyse", description: "Ausgaben auswerten" },
+  },
+  nav: {
+    title: "Navigation",
+    home: "Startseite",
+    upload: "Upload",
+    analysis: "Analyse",
+    toggle: "Seitenleiste ein-/ausblenden",
+  },
+  analysis: {
+    emptyTitle: "Noch keine Daten hochgeladen",
+    emptyDescription: "Lade zuerst eine CSV-Datei hoch, um die Analyse zu sehen.",
+    toUpload: "Zum Upload",
+    heading: "Analyse",
+    tabOverview: "Übersicht",
+    tabDetails: "Details",
+    kpiTotal: "Ausgaben gesamt",
+    kpiAverage: "Ø pro Monat",
+    kpiBookings: "Buchungen",
+    kpiTopCategory: "Größte Kategorie",
+    kpiShare: "{percent} % der Ausgaben",
+  },
+  upload: {
+    label: "CSV-Datei hierher ziehen",
+    description: "oder zum Auswählen klicken (nur .csv)",
+    errorTitle: "Datei konnte nicht geladen werden",
+    loaded: "Geladen: {fileName}",
+    privacy: "Die Daten bleiben nur im Browser und werden nicht gespeichert.",
+  },
+  range: { from: "Von", to: "Bis" },
+  donut: { title: "Ausgaben nach Kategorie" },
+  trend: {
+    title: "Verlauf nach Kategorie",
+    categories: "Kategorien",
+    categoriesCount: "{count} Kategorien",
+    selectOne: "Bitte mindestens eine Kategorie auswählen.",
+  },
+  topPayees: {
+    title: "Größte Empfänger",
+    largestTitle: "Größte Einzelausgaben",
+    date: "Datum",
+    purpose: "Verwendungszweck",
+  },
+  comparison: {
+    title: "Monatsvergleich",
+    needTwoMonths: "Für einen Vergleich werden Ausgaben aus mindestens zwei Monaten benötigt.",
+    month1: "Monat 1",
+    month2: "Monat 2",
+    difference: "Differenz:",
+    noExpenses: "Keine Ausgaben in den gewählten Monaten.",
+  },
+  unmatched: {
+    title: "Nicht zugeordnete Empfänger ({count})",
+    info: "Diese Empfänger passen zu keinem Stichwort und landen in „{fallback}“. Die Zuordnung gilt für alle Buchungen des Empfängers, nur für diese Sitzung und über die ganze Datei. Für eine dauerhafte Zuordnung das Stichwort in data/mapping.json ergänzen.",
+    bookings: "Buchungen",
+    sum: "Summe",
+    categoryFor: "Kategorie für {payee}",
+  },
+};
